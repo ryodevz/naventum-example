@@ -25,7 +25,6 @@
             "email": "ytryo789@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "config": {
         "optimize-autoloader": true,
         "sort-packages": true
@@ -34,5 +33,7 @@
         "php": "^7.3|^8.0",
         "naventum/framework": "^1.0",
         "naventum/naventum-auth": "^1.0"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
