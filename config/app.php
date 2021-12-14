@@ -72,6 +72,6 @@ return [
         App\Providers\RouteServiceProvider::class,
         App\Providers\AppServiceProvider::class,
 
-        Naventum\NaventumAuth\Illuminate\Foundation\Support\NaventumauthServiceProvider::class,
+        // Naventum\NaventumAuth\Illuminate\Foundation\Support\NaventumauthServiceProvider::class,
     ]
 ];
