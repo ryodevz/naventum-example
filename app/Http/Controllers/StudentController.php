@@ -9,7 +9,13 @@ class StudentController extends Controller
 {
     public function index()
     {
-        $students = Student::latest()->get();
+        $students = Student::query();
+
+        if (request()->get('q')) {
+            $students = $students->where('nisn', 'LIKE', '%' . request()->get('q') . '%')->orWhere('name', 'LIKE', '%' . request()->get('q') . '%');
+        }
+
+        $students = $students->orderBy('created_at', 'DESC')->get();
 
         return view('student/index', compact('students'));
     }
@@ -21,7 +27,7 @@ class StudentController extends Controller
 
     public function edit(Student $student)
     {
-        return view('student/edit', compact('student'));
+        return view('student.edit', compact('student'));
     }
 
     public function store()
