@@ -31,9 +31,9 @@
     },
     "require": {
         "php": "^7.3|^8.0",
-        "naventum/framework": "^1.0",
-        "naventum/naventum-auth": "^1.0",
-        "ryodevz/phpexport": "^3.0"
+        "naventum/framework": "^1.5.8",
+        "naventum/naventum-auth": "^1.2.4",
+        "ryodevz/phpexport": "^3.1.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
