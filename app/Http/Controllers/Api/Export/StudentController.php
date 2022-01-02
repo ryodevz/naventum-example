@@ -4,8 +4,9 @@ namespace App\Http\Controllers\Api\Export;
 
 use App\Models\Student;
 use Ryodevz\Phpexport\Support\Facade\Export;
+use App\Http\Controllers\Controller;
 
-class StudentController
+class StudentController extends Controller
 {
     public function pdf()
     {

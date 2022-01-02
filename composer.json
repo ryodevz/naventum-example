@@ -27,15 +27,19 @@
     ],
     "config": {
         "optimize-autoloader": true,
+        "preferred-install": "dist",
         "sort-packages": true
     },
     "require": {
         "php": "^7.3|^8.0",
+<<<<<<< HEAD
         "haydenpierce/class-finder": "^0.4.3",
         "laravel/serializable-closure": "^1.0",
-        "naventum/framework": "^1.6.0",
-        "naventum/naventum-auth": "^1.0",
         "nesbot/carbon": "^2.55",
+=======
+        "naventum/framework": "^1.6",
+        "naventum/naventum-auth": "^1.0",
+>>>>>>> 107223b768a287acd76331d95a3e5a1e07ed5659
         "ryodevz/phpexport": "^3.1.4"
     },
     "minimum-stability": "dev",
