@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fe1173840a43327517a803a964d57684",
+    "content-hash": "1a96bc3b6d69465bf9802067eab88392",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -484,12 +484,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/database.git",
-                "reference": "b6d33617f7ff95864fb82f7a9301979b23e067b5"
+                "reference": "f5721f4e4a53b1a9158cf22a04b7bc817cbc733f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/database/zipball/b6d33617f7ff95864fb82f7a9301979b23e067b5",
-                "reference": "b6d33617f7ff95864fb82f7a9301979b23e067b5",
+                "url": "https://api.github.com/repos/illuminate/database/zipball/f5721f4e4a53b1a9158cf22a04b7bc817cbc733f",
+                "reference": "f5721f4e4a53b1a9158cf22a04b7bc817cbc733f",
                 "shasum": ""
             },
             "require": {
@@ -544,7 +544,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2021-12-13T15:25:12+00:00"
+            "time": "2021-12-16T15:20:22+00:00"
         },
         {
             "name": "illuminate/events",
@@ -943,25 +943,86 @@
             "time": "2020-09-17T08:25:26+00:00"
         },
         {
-            "name": "naventum/framework",
-            "version": "v1.5.0",
+            "name": "laravel/serializable-closure",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/naventum/framework.git",
-                "reference": "780da7cb7400a1290774536eeb659307a0aa64c3"
+                "url": "https://github.com/laravel/serializable-closure.git",
+                "reference": "25de3be1bca1b17d52ff0dc02b646c667ac7266c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/naventum/framework/zipball/780da7cb7400a1290774536eeb659307a0aa64c3",
-                "reference": "780da7cb7400a1290774536eeb659307a0aa64c3",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/25de3be1bca1b17d52ff0dc02b646c667ac7266c",
+                "reference": "25de3be1bca1b17d52ff0dc02b646c667ac7266c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.3|^8.0"
+            },
+            "require-dev": {
+                "pestphp/pest": "^1.18",
+                "phpstan/phpstan": "^0.12.98",
+                "symfony/var-dumper": "^5.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\SerializableClosure\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Nuno Maduro",
+                    "email": "nuno@laravel.com"
+                }
+            ],
+            "description": "Laravel Serializable Closure provides an easy and secure way to serialize closures in PHP.",
+            "keywords": [
+                "closure",
+                "laravel",
+                "serializable"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/serializable-closure/issues",
+                "source": "https://github.com/laravel/serializable-closure"
+            },
+            "time": "2021-11-30T15:53:04+00:00"
+        },
+        {
+            "name": "naventum/framework",
+            "version": "v1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/naventum/framework.git",
+                "reference": "e34f8aa05dd898e15ad417efa856c241bca248cb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/naventum/framework/zipball/e34f8aa05dd898e15ad417efa856c241bca248cb",
+                "reference": "e34f8aa05dd898e15ad417efa856c241bca248cb",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-mbstring": "*",
                 "ext-openssl": "*",
+                "haydenpierce/class-finder": "^0.4.3",
                 "illuminate/database": "8.x-dev",
                 "jenssegers/blade": "dev-master",
+                "nesbot/carbon": "^2.55",
                 "php": "^7.3|^8.0",
                 "ryodevz/validator": "dev-main",
                 "symfony/error-handler": "5.4.x-dev",
@@ -989,9 +1050,9 @@
             ],
             "support": {
                 "issues": "https://github.com/naventum/framework/issues",
-                "source": "https://github.com/naventum/framework/tree/v1.5.0"
+                "source": "https://github.com/naventum/framework/tree/v1.6.0"
             },
-            "time": "2021-12-15T21:14:32+00:00"
+            "time": "2021-12-16T17:40:33+00:00"
         },
         {
             "name": "naventum/naventum-auth",
@@ -1127,20 +1188,23 @@
         },
         {
             "name": "phenx/php-font-lib",
-            "version": "0.5.2",
+            "version": "0.5.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/PhenX/php-font-lib.git",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8"
+                "url": "https://github.com/dompdf/php-font-lib.git",
+                "reference": "e359fc811c40ffd272b46c609a35934a5fc6316e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/ca6ad461f032145fff5971b5985e5af9e7fa88d8",
-                "reference": "ca6ad461f032145fff5971b5985e5af9e7fa88d8",
+                "url": "https://api.github.com/repos/dompdf/php-font-lib/zipball/e359fc811c40ffd272b46c609a35934a5fc6316e",
+                "reference": "e359fc811c40ffd272b46c609a35934a5fc6316e",
                 "shasum": ""
             },
+            "require": {
+                "ext-mbstring": "*"
+            },
             "require-dev": {
-                "phpunit/phpunit": "^4.8.35 || ^5 || ^6 || ^7"
+                "symfony/phpunit-bridge": "^3 || ^4 || ^5"
             },
             "type": "library",
             "autoload": {
@@ -1161,10 +1225,10 @@
             "description": "A library to read, parse, export and make subsets of different types of font files.",
             "homepage": "https://github.com/PhenX/php-font-lib",
             "support": {
-                "issues": "https://github.com/PhenX/php-font-lib/issues",
-                "source": "https://github.com/PhenX/php-font-lib/tree/0.5.2"
+                "issues": "https://github.com/dompdf/php-font-lib/issues",
+                "source": "https://github.com/dompdf/php-font-lib/tree/0.5.3"
             },
-            "time": "2020-03-08T15:31:32+00:00"
+            "time": "2021-12-17T13:58:44+00:00"
         },
         {
             "name": "phenx/php-svg-lib",
@@ -1433,16 +1497,16 @@
         },
         {
             "name": "ryodevz/phpexport",
-            "version": "v3.0.0",
+            "version": "v3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ryodevz/phpexport.git",
-                "reference": "98a72bfc644fe8eee13f3cd0df35f4c48d24a8c6"
+                "reference": "85ee893e5d2da145b4e0aa5071910b079b7ac865"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ryodevz/phpexport/zipball/98a72bfc644fe8eee13f3cd0df35f4c48d24a8c6",
-                "reference": "98a72bfc644fe8eee13f3cd0df35f4c48d24a8c6",
+                "url": "https://api.github.com/repos/ryodevz/phpexport/zipball/85ee893e5d2da145b4e0aa5071910b079b7ac865",
+                "reference": "85ee893e5d2da145b4e0aa5071910b079b7ac865",
                 "shasum": ""
             },
             "require": {
@@ -1466,9 +1530,9 @@
             ],
             "support": {
                 "issues": "https://github.com/ryodevz/phpexport/issues",
-                "source": "https://github.com/ryodevz/phpexport/tree/v3.0.0"
+                "source": "https://github.com/ryodevz/phpexport/tree/v3.1.4"
             },
-            "time": "2021-11-26T10:03:08+00:00"
+            "time": "2021-12-16T17:36:18+00:00"
         },
         {
             "name": "ryodevz/validator",
@@ -2878,12 +2942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "d98a9889d86c149f6fa35e182d6e849d168b0ca3"
+                "reference": "dd46c263f277573244c517bac125a78f67b83a98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/d98a9889d86c149f6fa35e182d6e849d168b0ca3",
-                "reference": "d98a9889d86c149f6fa35e182d6e849d168b0ca3",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/dd46c263f277573244c517bac125a78f67b83a98",
+                "reference": "dd46c263f277573244c517bac125a78f67b83a98",
                 "shasum": ""
             },
             "require": {
@@ -2951,7 +3015,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-14T15:42:27+00:00"
+            "time": "2021-12-17T00:42:26+00:00"
         },
         {
             "name": "voku/portable-ascii",

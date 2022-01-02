@@ -32,10 +32,11 @@
     "require": {
         "php": "^7.3|^8.0",
         "haydenpierce/class-finder": "^0.4.3",
-        "naventum/framework": "^1.0",
+        "laravel/serializable-closure": "^1.0",
+        "naventum/framework": "^1.6.0",
         "naventum/naventum-auth": "^1.0",
         "nesbot/carbon": "^2.55",
-        "ryodevz/phpexport": "^3.0"
+        "ryodevz/phpexport": "^3.1.4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true

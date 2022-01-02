@@ -9,22 +9,22 @@ class StudentController
 {
     public function pdf()
     {
-        return (new Export)->makePDF(makeView('student.api.index', ['students' => $this->get()]))->download();
+        return (new Export)->makePDF(view('student.api.index', ['students' => $this->get()]))->download();
     }
 
     public function pdf_preview()
     {
-        return (new Export)->makePDF(makeView('student.api.index', ['students' => $this->get()]))->preview();
+        return (new Export)->makePDF(view('student.api.index', ['students' => $this->get()]))->preview();
     }
 
     public function excel()
     {
-        return (new Export)->makeExcel(makeView('student.api.index', ['students' => $this->get()]))->download();
+        return (new Export)->makeExcel(view('student.api.index', ['students' => $this->get()]))->download();
     }
 
     public function word()
     {
-        return (new Export)->makeWord(makeView('student.api.index', ['students' => $this->get()]))->download();
+        return (new Export)->makeWord(view('student.api.index', ['students' => $this->get()]))->download();
     }
 
     private function query()
